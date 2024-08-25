@@ -139,7 +139,7 @@
             <br />large windows that flood the space with natural light.
           </p>
           <button
-            class="btn bg-[#ABEF5F80] rounded-full text-xl font-bold w-full md:w-fit"
+            class="btn bg-[#ABEF5F80] rounded-full text-xl font-bold w-full md:w-fit border-none"
           >
             View Details
             <img
@@ -334,7 +334,7 @@
             Meet Out Agents
           </h1>
           <p
-            class="text-[#494949] md:text-base text-sm font-medium text-center pb-8"
+            class="text-[#494949] md:text-base text-sm font-medium text-center pb-8 md:mx-0 mx-4"
           >
             Our agents are dedicated professionals committed to finding you the
             perfect home and guiding you through every step of the buying or
@@ -470,7 +470,7 @@
       <section class="md:mt-14 md:bg-white bg-[#E9E9E9] md:pb-0 pb-1">
         <div class="text-center space-y-7">
           <div
-            class="flex justify-start items-center gap-2 bg-[#ABEF5F33] px-3 py-1 rounded-full w-fit mx-auto md:mt-0 btn"
+            class="flex justify-start items-center gap-2 bg-[#ABEF5F33] px-3 py-1 rounded-full w-fit mx-auto md:mt-0 btn border-none"
           >
             <div>
               <img class="rotate-45" src="assets/black-arrow.png" alt="" />
@@ -492,13 +492,17 @@
         </div>
 
         <!-- grid section start  -->
-        <div class="grid gap-6 md:mx-48 my-12">
-          <div class="md:grid md:grid-cols-7 gap-6">
+        <div class="grid gap-6 md:mx-48 md:my-12">
+          <div class="md:grid md:grid-cols-7 gap-6 md:mt-0 mt-7">
             <div
-              class="md:flex gap-6 md:col-span-5 border border-[#E9E9E9] p-6 rounded-2xl bg-white md:mx-0 mx-4"
+              class="md:flex items-center gap-6 md:col-span-5 border border-[#E9E9E9] p-6 rounded-2xl bg-white md:mx-0 mx-4"
             >
               <div>
-                <img class="md:w-[600px] w-full" src="assets/img1.png" alt="" />
+                <img
+                  class="md:w-[600px] w-full h-[210px]"
+                  src="assets/img1.png"
+                  alt=""
+                />
               </div>
               <div class="space-y-3">
                 <h3
@@ -527,34 +531,26 @@
             <div
               class="col-span-2 border border-[#E9E9E9] p-6 rounded-2xl md:w-full bg-white md:mx-0 mx-4 md:mt-0 mt-7"
             >
-              <img
-                class="md:w-full md:h-[180px]"
-                src="assets/img2.png"
-                alt=""
-              />
+              <img class="md:w-full h-[210px]" src="assets/img2.png" alt="" />
             </div>
           </div>
 
-          <div class="md:grid grid-cols-8 gap-6 md:-order-none order-3">
+          <div
+            class="md:grid md:flex-none flex flex-col flex-col-reverse grid-cols-8 gap-6"
+          >
             <div
               class="col-span-2 border border-[#E9E9E9] p-6 rounded-2xl bg-white md:mx-0 mx-4 md:mb-0 mb-7"
             >
-              <img
-                class="md:w-full h-[180px] w-full"
-                src="assets/img3.png"
-                alt=""
-              />
+              <img class="h-[210px] w-full" src="assets/img3.png" alt="" />
             </div>
 
-            <div
-              class="col-span-4 md:bg-white bg-[#E9E9E9] md:order-none order-2"
-            >
+            <div class="col-span-4 md:bg-white bg-[#E9E9E9]">
               <div
-                class="md:flex gap-6 col-span-3 border border-[#E9E9E9] p-6 rounded-2xl md:mx-0 mx-4 bg-white"
+                class="md:flex items-center gap-6 col-span-3 border border-[#E9E9E9] p-6 rounded-2xl md:mx-0 mx-4 bg-white"
               >
                 <div>
                   <img
-                    class="md:w-[860px] w-full"
+                    class="md:w-[860px] w-full h-[210px]"
                     src="assets/img4.png"
                     alt=""
                   />
@@ -585,10 +581,10 @@
             </div>
 
             <div
-              class="col-span-2 border border-[#E9E9E9] p-6 rounded-2xl md:w-full bg-white md:mx-0 mx-4 md:mt-0 mt-7 md:-order-none order-1"
+              class="col-span-2 border border-[#E9E9E9] p-6 rounded-2xl md:w-full bg-white md:mx-0 mx-4 md:mt-0 mt-7"
             >
               <img
-                class="md:w-full h-[180px] w-full"
+                class="md:w-full h-[210px] w-full"
                 src="assets/img5.png"
                 alt=""
               />
@@ -599,10 +595,25 @@
       </section>
       <!-- portfolio section end  -->
 
+      <!-- only in responsive section  -->
+      <section class="bg-[#E9E9E9] pb-9">
+        <div
+          class="md:hidden border border-[#E9E9E9] p-6 rounded-2xl md:w-full bg-[white] mx-4"
+        >
+          <img
+            class="md:w-full h-[210px] w-full"
+            src="assets/img5.png"
+            alt=""
+          />
+        </div>
+      </section>
+
       <!-- Articles section start  -->
       <section class="bg-[#E9E9E9] pb-12">
         <div class="text-center space-y-3 md:py-12">
-          <div class="bg-[#ABEF5F33] w-fit rounded-full mx-auto btn">
+          <div
+            class="bg-[#ABEF5F33] w-fit rounded-full mx-auto btn border-none"
+          >
             <img class="rotate-45 inline" src="assets/black-arrow.png" alt="" />
             <a class="pl-2 text-[#494949] text-base font-bold">Rinterio News</a>
           </div>
@@ -789,7 +800,7 @@
 
         <div class="text-center mx-4">
           <button
-            class="text-[#1C1C1C] text-xl font-extrabold btn bg-[#ABEF5F] md:w-[970px] w-full rounded-full mt-14"
+            class="text-[#1C1C1C] text-xl font-extrabold btn bg-[#ABEF5F] md:w-[970px] w-full rounded-full mt-14 border-none"
           >
             Send Mail
             <img
@@ -832,7 +843,7 @@
 
         <div class="text-center pb-14">
           <button
-            class="text-[#1C1C1C] text-xl font-extrabold bg-[#ABEF5F] rounded-full px-5 py-2 btn"
+            class="text-[#1C1C1C] text-xl font-extrabold bg-[#ABEF5F] rounded-full px-5 py-2 btn border-none"
           >
             Book Consult
             <img
